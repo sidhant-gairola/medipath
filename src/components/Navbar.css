@@ -1,0 +1,9 @@
+.logoName {
+    position: relative;
+    height: 40px;
+    object-fit: contain;
+}
+
+.invert{
+    filter: greyscale(100%);
+}
