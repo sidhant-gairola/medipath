@@ -8,7 +8,7 @@ const app = express()
 const port = 3000
 
 app.use(cors({
-  origin: 'https://medipath-chi.vercel.app/treatment' // Allow requests from the frontend domain
+  origin: 'https://medipath-chi.vercel.app' // Allow requests from the frontend domain
 }));
 
 app.use(bodyParser.json())
