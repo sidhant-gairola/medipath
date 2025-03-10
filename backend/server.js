@@ -41,7 +41,7 @@ app.post('/', async (req, res) => {
     const firstCandidate = geminiResponse.candidates[0];
     if (firstCandidate.content && firstCandidate.content.parts && firstCandidate.content.parts.length > 0) {
       const generatedText = firstCandidate.content.parts[0].text;
-      // console.log(generatedText); // Output the generated text       // This line is primarily used for logging the generated text from the API response to the console.
+      // console.log(generatedText); // Output the generated text       ||    This line is primarily used for logging the generated text from the API response to the console.
       res.json({ generatedText }); // Send the generated text back to the client
     } else {
       console.log("No text found in candidate.");
