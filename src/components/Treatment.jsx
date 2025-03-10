@@ -20,8 +20,7 @@ function Treatment({ darkMode }) {
     };
 
     try {
-      const response = await fetch('https://medipath-chi.vercel.app', {
-
+      const response = await fetch('http://localhost:3000/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
