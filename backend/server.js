@@ -7,7 +7,10 @@ dotenv.config();
 const app = express()
 const port = 3000
 
-app.use(cors())
+app.use(cors({
+  origin: 'https://medipath-chi.vercel.app' // Allow requests from the frontend domain
+}));
+
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
