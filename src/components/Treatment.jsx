@@ -20,7 +20,7 @@ function Treatment({ darkMode }) {
     };
 
     try {
-      const response = await fetch(`http://localhost:3000`, {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
