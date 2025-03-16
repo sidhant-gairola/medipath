@@ -20,7 +20,7 @@ function Treatment({ darkMode }) {
     };
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/`, {
+      const response = await fetch(`https://medipath.onrender.com`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
