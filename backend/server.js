@@ -21,7 +21,14 @@ app.post('/', async (req, res) => {
   const requestBody = {
     contents: [{
       parts: [{
-        text: `I am having these symptoms: ${symptoms}, with prior medical history: ${medicalHistory} and current condition: ${currentCondition}. Please make me a personalised treatment planning.`
+        text: `I have the following symptoms: ${symptoms}. My medical history includes: ${medicalHistory}. My current condition is: ${currentCondition}. 
+  
+        Please provide a concise, personalized treatment plan that includes:  
+        1. Immediate care at home (self-treatment steps).  
+        2. When to see a doctor (red flag symptoms).  
+        3. Special considerations based on my medical history.  
+  
+        Keep it brief, easy to follow, and actionable.`
       }]
     }]
   };

@@ -48,24 +48,24 @@ function Treatment({ darkMode }) {
           <h2 className={`text-4xl font-extrabold mb-6 text-center ${darkMode ? 'text-white ' : 'text-black'}`}>Symptom Analysis</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className={`block text-sm font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-700'}`}>
+              <label className={`text-l block font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-700'}`}>
                 Describe your symptoms:
               </label>
-              <textarea value={symptoms} onChange={(e) => setSymptoms(e.target.value)} className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Enter your symptoms here..." required />
+              <textarea value={symptoms} onChange={(e) => setSymptoms(e.target.value)} className="w-full text-black px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Enter your symptoms here..." required />
             </div>
 
             <div>
-              <label className={`block text-sm font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-700'}`}>
+              <label className={`block text-l font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-700'}`}>
                 Medical History:
               </label>
-              <textarea value={medicalHistory} onChange={(e) => setMedicalHistory(e.target.value)} className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Enter your medical history (allergies, past illnesses, surgeries, etc.)..." required />
+              <textarea value={medicalHistory} onChange={(e) => setMedicalHistory(e.target.value)} className="w-full text-black px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Enter your medical history (allergies, past illnesses, surgeries, etc.)..." required />
             </div>
 
             <div>
-              <label className={`block text-sm font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-700'}`}>
+              <label className={`block text-l font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-700'}`}>
                 Current Medical Conditions:
               </label>
-              <textarea value={currentCondition} onChange={(e) => setCurrentCondition(e.target.value)} className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Enter any current medical conditions (diabetes, hypertension, etc.)..." required />
+              <textarea value={currentCondition} onChange={(e) => setCurrentCondition(e.target.value)} className="w-full text-black px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Enter any current medical conditions (diabetes, hypertension, etc.)..." required />
             </div>
 
             <button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-blue-800 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-900 transition-colors" disabled={isLoading} >
