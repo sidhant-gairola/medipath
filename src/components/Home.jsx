@@ -19,9 +19,9 @@ function Home({ darkMode }) {
   }, []);
 
   return (
-    <div className="mx-auto mb-10">
+    <div className="mx-auto mb-10 tracking-tight">
       <img src={currentImage} alt="Top Image" className={`w-full h-auto mb-4 ${darkMode ? 'filter brightness-75' : ''}`} />
-      <h2 className="text-4xl font-extrabold text-center mb-5 mt-12"> How It Works? </h2>
+      <h2 className="text-4xl font-bold text-center mb-5 mt-12 tracking-tighter"> How It Works? </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-black flex-wrap px-4 md:px-10">
         {[
           {

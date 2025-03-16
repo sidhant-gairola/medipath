@@ -45,9 +45,9 @@ function Team() {
   ];
 
   return (
-    <div className="pt-8 pb-16 px-4">
+    <div className="pt-8 pb-16 px-4 tracking-tight">
       <div className="max-w-screen-xl mx-auto">
-        <div className="text-5xl font-extrabold text-center mb-12 ">
+        <div className="text-5xl font-bold tracking-tighter text-center mb-12 ">
           Meet Our Team
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
