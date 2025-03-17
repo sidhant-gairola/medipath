@@ -57,17 +57,18 @@ function Navbar({ darkMode, toggleDarkMode }) {
             </NavLink>
           </motion.div>
 
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-6 ">
             {/* Navigation Links (Always visible on larger screens) */}
             <div className="hidden md:flex space-x-6">
-              <NavLink to="/" className={`text-lg font-semibold transition-all ${darkMode ? "text-white hover:border-b-2 border-white" : "text-gray-900 hover:border-b-2 duration-75 border-black" }`} >
+              <NavLink to="/" className={`text-lg font-semibold transition-all border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black" }`} >
                 Home
               </NavLink>
-              <NavLink to="/treatment" className={`text-lg font-semibold ${darkMode ? "text-white hover:border-b-2 border-white" : "text-gray-900 hover:border-b-2 duration-75 border-black" }`} >
+              <NavLink to="/treatment" className={`text-lg font-semibold border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black" }`} >
                 Treatment
               </NavLink>
-              <NavLink to="/team" className={`text-lg font-semibold ${darkMode ? "text-white hover:border-b-2 border-white" : "text-gray-900 hover:border-b-2 duration-75 border-black" }`} >
-                Our Team
+              <NavLink to="/team" className={`text-lg font-semibold border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black" }`} >
+                {/* Our Team */}
+                About Us
               </NavLink>
             </div>
 
@@ -96,7 +97,8 @@ function Navbar({ darkMode, toggleDarkMode }) {
             Treatment
           </NavLink>
           <NavLink to="/team" onClick={() => setDropdownOpen(false)} className={`block px-4 py-2 text-lg font-semibold ${darkMode ? "text-white bg-gray-900" : "text-black bg-gray-100"}`}>
-            Our Team
+            {/* Our Team */}
+            About Us
           </NavLink>
         </div>
       )}
