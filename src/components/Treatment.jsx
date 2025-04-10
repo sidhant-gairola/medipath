@@ -69,7 +69,7 @@ function Treatment({ darkMode }) {
             </div>
 
             <button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-blue-800 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-900 transition-colors" disabled={isLoading} >
-              {isLoading ? "Loading your treatment plan, please wait.." : "Get Treatment Plan"} {/* Change button text */}
+              {isLoading ? "Loading your treatment plan, please wait. This may take some time.." : "Get Treatment Plan"} {/* Change button text */}
             </button>
           </form>
         </motion.div>

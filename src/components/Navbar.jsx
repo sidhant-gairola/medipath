@@ -60,13 +60,13 @@ function Navbar({ darkMode, toggleDarkMode }) {
           <div className="flex items-center space-x-6 ">
             {/* Navigation Links (Always visible on larger screens) */}
             <div className="hidden md:flex space-x-6">
-              <NavLink to="/" className={`text-lg font-semibold transition-all border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black" }`} >
+              <NavLink to="/" className={`text-lg font-semibold transition-all border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black"}`} >
                 Home
               </NavLink>
-              <NavLink to="/treatment" className={`text-lg font-semibold border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black" }`} >
+              <NavLink to="/treatment" className={`text-lg font-semibold border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black"}`} >
                 Treatment
               </NavLink>
-              <NavLink to="/team" className={`text-lg font-semibold border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black" }`} >
+              <NavLink to="/team" className={`text-lg font-semibold border-b-2 border-transparent ${darkMode ? "text-white hover:border-b-2 hover:border-white" : "text-gray-900 hover:border-b-2 hover:border-black"}`} >
                 {/* Our Team */}
                 About Us
               </NavLink>
@@ -80,7 +80,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
             )}
 
             {/* Dark Mode Toggle */}
-            <button onClick={toggleDarkMode} className={`text-lg p-2 rounded-full ${darkMode? "hover:bg-gray-700 text-white ": "hover:bg-gray-200 text-gray-900" } `} >
+            <button onClick={toggleDarkMode} className={`text-lg p-2 rounded-full ${darkMode ? "hover:bg-gray-700 text-white " : "hover:bg-gray-200 text-gray-900"} `} >
               {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
             </button>
           </div>

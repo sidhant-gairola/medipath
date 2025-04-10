@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import bgimage1 from '../Images/MediPath1.jpg';
 import bgimage2 from '../Images/MediPath2.png';
 
 function Home({ darkMode }) {
-  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const [error, setError] = useState(null);
-  const [data, setData] = useState(null);
-  const [showTreatment, setShowTreatment] = useState(false);
   const [currentImage, setCurrentImage] = useState(bgimage1);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage(prevImage => (prevImage === bgimage1 ? bgimage2 : bgimage1));
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
