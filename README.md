@@ -54,8 +54,6 @@ The project leverages React for component-based architecture, Vite for fast buil
 - The API processes the input and generates personalized treatment recommendations.
 - The response is sent back to the frontend for display.
 
-**Database (MySQL / MongoDB)**
-- Stores patient medical history and treatment records.
 
 ### Component Overview
 - **Home**: Displays the main features of the application, including symptom analysis, AI diagnosis, and treatment plans. It features an image carousel and a navigation button to get started.
