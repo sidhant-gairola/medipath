@@ -32,11 +32,11 @@ MediPath is designed to provide personalized treatment guidance. It utilizes mod
 - **React**: A JavaScript library for building user interfaces.
 - **Vite**: A build tool that provides a fast development environment.
 - **Tailwind CSS**: A utility-first CSS framework for styling.
-- **Axios**: A promise-based HTTP client for making requests.
+- **Fetch API**: Native browser API for making HTTP requests.
 - **Framer Motion**: A library for animations in React.
 
 ### How It Works
-The project leverages React for component-based architecture, Vite for fast builds and hot module replacement, and Tailwind CSS for styling. The application fetches data using Axios and provides a smooth user experience with animations powered by Framer Motion.
+The project leverages React for component-based architecture, Vite for fast builds and hot module replacement, and Tailwind CSS for styling. The application fetches data using the Fetch API and provides a smooth user experience with animations powered by Framer Motion.
 
 ### Architecture Overview
 **Frontend (React.js)** 
@@ -76,15 +76,5 @@ Frontend	   =>    React.js (UI), Vite (Build Tool), Tailwind CSS (Styling)
 Backend	   =>    Node.js (Express)
 ML Model	   =>    Gemini API
 Database	   =>    MySQL / MongoDB (if applicable)
-APIs	      =>    Axios (HTTP Client), FHIR API, OpenFDA, MedlinePlus, RxNorm
+APIs	      =>    Fetch API (native browser API), FHIR API, OpenFDA, MedlinePlus, RxNorm
 Development Tools => ESLint, Concurrently
-
-
-
-
-
-# React + Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-Currently, two official plugins are available:
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
