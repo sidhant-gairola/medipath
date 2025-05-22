@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from 'framer-motion';
 
-
 function Treatment({ darkMode }) {
   const [symptoms, setSymptoms] = useState('');
   const [medicalHistory, setMedicalHistory] = useState('');
@@ -20,7 +19,7 @@ function Treatment({ darkMode }) {
     };
 
     try {
-      const response = await fetch(`https://medipath.onrender.com`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,7 +43,10 @@ function Treatment({ darkMode }) {
   return (
     <div className="pb-20 mt-11 mb-12 mx-4 tracking-tight">
       <div className="max-w-4xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }} >
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }} >
           <h2 className={`text-4xl font-bold mb-6 text-center tracking-tighter ${darkMode ? 'text-white ' : 'text-black'}`}>Symptom Analysis</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
