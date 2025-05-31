@@ -1,11 +1,7 @@
 import { motion } from 'framer-motion';
 import { CgMail } from "react-icons/cg";
 import { FaLinkedin } from "react-icons/fa";
-import saamiImage from '../Images/imgSaami.jpg';
-import pranjalImage from '../Images/imgPranjal.jpg';
 import sidhantImage from '../Images/imgSidhant.jpeg';
-import asadImage from '../Images/imgAsad.jpg';
-import shipraImage from '../Images/imgShipra.jpg';
 
 function Team({ darkMode }) {
   const teamMembers = [
