@@ -16,34 +16,6 @@ function Team({ darkMode }) {
       linkedin: "https://linkedin.com/in/sidhant-gairola",
       image: sidhantImage
     },
-    // {
-    //   name: "Pranjal Mishra",
-    //   role: "Frontend Developer",
-    //   email: "pranjalmishra402@gmail.com",
-    //   linkedin: "https://www.linkedin.com/in/pranjal-mishra-06b1501a4/",
-    //   image: pranjalImage
-    // },
-    // {
-    //   name: "Mohammad Saami",
-    //   role: "Data Analyst",
-    //   email: "khansaami942@gmail.com",
-    //   linkedin: "https://www.linkedin.com/in/muhammad-saami-b19980267/",
-    //   image: saamiImage
-    // },
-    // {
-    //   name: "Asad Rasheed Khan",
-    //   role: "Frontend Developer",
-    //   email: "asadkhan11156@gmail.com",
-    //   linkedin: "https://linkedin.com/in/asad-rasheed-khan",
-    //   image: asadImage
-    // },
-    // {
-    //   name: "Shipra Nayal",
-    //   role: "Developer",
-    //   email: "shipranayal98@gmail.com",
-    //   linkedin: "https://www.linkedin.com/in/shipra-nayal-708b6b327/",
-    //   image: shipraImage
-    // }
   ];
 
   return (
