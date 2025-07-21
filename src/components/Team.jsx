@@ -2,8 +2,9 @@ import { motion } from 'framer-motion';
 import { CgMail } from "react-icons/cg";
 import { FaLinkedin } from "react-icons/fa";
 import sidhantImage from '../Images/imgSidhant.jpeg';
+import pranjalImage from '../Images/imgPranjal.jpg';
 
-function Team({ darkMode }) {
+function Team() {
   const teamMembers = [
     {
       name: "Sidhant Gairola",
@@ -12,25 +13,31 @@ function Team({ darkMode }) {
       linkedin: "https://linkedin.com/in/sidhant-gairola",
       image: sidhantImage
     },
+    {
+      name: "Pranjal Mishra",
+      role: "Full Stack Developer",
+      email: "pranjalmishra402@gmail.com",
+      linkedin: "https://www.linkedin.com/in/pranjal-mishra-06b1501a4/",
+      image: pranjalImage
+    },
   ];
 
   return (
-    <div className="aboutUs pt-8 px-4 tracking-tight mb-36">
+    <div className="aboutUs pt-8 px-4 tracking-tight mb-20">
       <div className="max-w-screen-xl mx-auto">
         <div className="text-5xl font-bold tracking-tighter text-center mb-12 ">
           {/* Meet Our Team */}
           About Us
         </div>
-        <div className="max-w-lg mx-auto">
-          {/*<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 "> */}
+        <div className="grid grid-cols-1 md:grid-cols-2  justify-items-center">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white hover:bg-neutral-100 rounded-2xl shadow-lg overflow-hidden" >
-              <img src={member.image} alt={member.name} className="w-full h-80 object-cover hover:scale-105 transition-all duration-500" />
+              className="max-w-xl bg-white hover:bg-neutral-100 rounded-2xl shadow-lg overflow-hidden" >
+              <img src={member.image} alt={member.name} className="w-96 h-96 object-cover hover:scale-105 transition-all duration-500" />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-2 text-black">{member.name}</h3>
                 <p className="text-lg text-gray-600 mb-4">{member.role}</p>
